@@ -1,6 +1,5 @@
 //this is the client side javascript that is going to run
 //in the browser
-console.log("Client style js file is loaded!!!")
 
 const weatherForm = document.querySelector("form") //to control weatherForm do this
 const searchElement = document.querySelector("input") //get the data passed in via <form> </form>
