@@ -14,7 +14,7 @@ This code will run in client side java script, so using the fetch APi is
 perfectly fine
 */
 
-const getWeatherData = (address) => fetch("http://localhost:3000/weather?address=" + address).then((response) => {
+const getWeatherData = (address) => fetch("/weather?address=" + address).then((response) => {
   response.json().then((data) => {
     if (data.error) {
       messageOne.textContent = data.error
