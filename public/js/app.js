@@ -5,6 +5,7 @@ const weatherForm = document.querySelector("form") //to control weatherForm do t
 const searchElement = document.querySelector("input") //get the data passed in via <form> </form>
 const messageOne = document.querySelector("#message-1")
 const messageTwo = document.querySelector("#message-2")
+const messageThree = document.querySelector("#message-3")
 
 /*
 Fetch API is not js, but it is browser based API.
@@ -21,6 +22,7 @@ const getWeatherData = (address) => fetch("/weather?address=" + address).then((r
     } else {
       messageOne.textContent = data.location
       messageTwo.textContent = data.forecastData
+      messageThree.textContent = data.humidity
     }
   })
 })
